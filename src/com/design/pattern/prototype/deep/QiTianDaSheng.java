@@ -7,6 +7,10 @@ import java.io.ObjectOutputStream;
 import java.io.Serializable;
 import java.util.Date;
 
+/**
+ * 把对象中配置的依赖关系，在每次使用对象之前，都会创建一个新的对象
+ * 并且会将依赖关系完整的赋值给这个新创建的对象scope='prototype'
+ */
 public class QiTianDaSheng extends Monkey implements Cloneable, Serializable {
 
     public JinGuBang jinGuBang;
